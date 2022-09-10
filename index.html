@@ -4,6 +4,26 @@
   <h1>YOUR NAME</h1>
   <p>Welcome to my website!</p>
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  
+  <p></p>
+  
+  <p>Get a name!</p>
+  
+  <button id="getit">Generate</button>
+  
+  <div id="name"></div>
+  
+  <script>
+    t = ['to', 'the', 'total'];
+    b = ['babes', 'bold', 'booty'];
+    d = ['dragon', 'dagger', 'disasters'];
+	
+	var numRand = Math.floor(Math.random() * t.length);
+	
+	randName = t[numRand] + ' ' + b[numRand] + ' ' + d[numRand];
+	
+	document.getElementById("name").innerHTML = randName;
+  </script>
 </body>
 
 </html>
